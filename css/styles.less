@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:300,700');
+
+// Colors
+@100: #F5F5F5; // Gris clair
+@500: #9E9E9E; // Gris moyen
+@900: #212121; // Gris foncé
+
+// Breakpoints
+@tablet:	~'screen and (min-width: 48em)';
+@laptop:	~'screen and (min-width: 64em)';
+
+body {
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Montserrat', cursive;
+}
+
+h2 {
+	color: @500;
+	text-align: center;
+	padding: 50px;
+}
+
+.padding {
+	padding: 1em;	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+    display: block;
+}
+
+header {
+	background-color: @900;
+	text-align: center;
+	
+	.logo {
+		color: @500;
+		font-size: 2em;
+		padding: 25px;
+		font-family: 'Bungee', cursive;
+	}
+}
+
+main {
+	padding: 0 25px 25px;
+
+	.groupe {
+		background-color: @100;
+		border-top: 1px solid @500;
+		border-bottom: 1px solid @500;
+		display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+		.bloc {
+
+		}
+	}
+	
+}
+
+footer {
+	background-color: @500;
+	text-align: center;
+	padding: 50px;
+}
+
+.tiers{
+    flex: 0 0 33%;
+}
+.galerie div{
+    flex: 0 0 50%;
+    @media @tablet{
+        flex: 0 0 25%;
+    }
+    @media @laptop{
+        flex: 0 0 12.5%;
+    }
+}
+.un{
+    flex: 0 0 50%;
+    @media @tablet{
+        flex: 0 0 25%;
+    }
+    @media @laptop{
+        flex: 0 0 50%;
+    }
+}
+.deux{
+    @media @tablet{
+        flex: 0 0 50%;
+    }
+    @media @laptop{
+        flex: 0 0 50%;
+    }
+}
+.trois{
+    @media @tablet{
+        flex: 0 0 100%;
+    }
+    @media @laptop{
+        flex: 0 0 50%;
+    }
+}
+.quatre{
+    @media @tablet{
+        flex: 0 0 33%;
+    }
+    @media @laptop{
+        flex: 0 0 50%;
+    }
+}
+.cinq{
+    @media @tablet{
+        flex: 0 0 33%;
+    }
+    @media @laptop{
+        flex: 0 0 100%;
+    }
+}
+
+.resp{
+    @media @tablet{
+        flex: 0 0 50%;
+    }
+    @media @laptop{
+        flex: 0 0 25%;
+    }
+}
+.apres1{
+    @media @tablet{
+        flex: 0 0 40%;
+    }
+}
+.apres2{
+    @media @tablet{
+        flex: 0 0 60%;
+    }
+}
